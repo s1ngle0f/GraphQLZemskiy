@@ -1,0 +1,19 @@
+type Query
+{
+    shops: [Shop]
+    goods: [Goods]
+}
+
+type Shop
+{
+    id: ID!
+    name: String
+}
+
+type Goods
+{
+    id: ID!
+    name: String
+    price: Float
+    shop: Shop
+}
